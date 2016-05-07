@@ -1,0 +1,164 @@
+<html>
+
+
+<style>
+	body
+	{
+		background:lightblue;
+	}
+	.c1
+	{
+		background:gray;
+		height:41px;
+	}
+	.s1
+	{
+		margin-left:10px;
+		margin-top:10px;
+		padding-top:5px;
+		float:left;
+		height:25px;
+		width:100px;
+		background:lightgray;
+		text-align:center;
+		color:blue;
+		font-weight:bold;
+		border-top:1px solid lightgreen;
+		border-left:1px solid lightgreen;
+		border-right:1px solid lightgrren;
+		border-radius:10px 10px 0px 0px;
+	}
+	.s2
+	{
+		margin-left:10px;
+		margin-top:10px;
+		padding-top:5px;
+		float:left;
+		height:25px;
+		width:100px;
+		background:darkgray;
+		color:black;
+		text-align:center;
+		border-radius:10px 10px 0px 0px;
+		border:none;
+		color:red;
+	}
+	.container
+	{
+		height:400px;
+		border-bottom:5px solid gray;
+		border-left:5px solid gray;
+		border-right:5px solid gray;
+		background:gainsboro;
+	}
+	#video
+	{
+		float:left;
+		margin-top:20px;
+		margin-left:55px;
+		height:340px;
+		width:400px;
+	}
+	#description
+	{
+		float:left;
+		margin-top:82px;
+		margin-left:55px;
+		height:280px;
+		width:420px;
+		background:white;
+		border-radius:20px;
+		padding-top:10px;
+		padding-left:10px;
+		padding-right:10px;
+		font-size:18px;
+	}
+	fieldset
+	{
+		background:lightblue;
+	}
+	legend
+	{
+		color:red;
+	}
+	.s3
+	{
+		display:none;
+	}
+</style>
+
+<script src="jquery-2.1.4.min.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+	$(document).ready(function()
+	{
+		$('#sec1').css({'background':'darkgray'}).addClass('s1');
+		$('#sec2').css({'background':'darkgray'}).addClass('s2');
+		$('#sec3').css({'background':'darkgray'}).addClass('s2');
+		$('section').click(function()
+		{
+			var id = $(this).attr('id');
+			if(id=='sec1')
+			{
+				$('#sec1').css({'background':'gainsboro'}).removeClass('s2').addClass('s1');
+				$('#sec2').css({'background':'darkgray'}).removeClass('s1').addClass('s2');
+				$('#sec3').css({'background':'darkgray'}).removeClass('s1').addClass('s2');
+				$('video').attr({src:'video1.mp4',height:'300px',width:'300px'});
+				$('#video').find('b').text('jQuery Core');
+				$('#description').empty();
+				$("<fieldset><legend>Description</legend><ul><li>Topic One</li><br><li>Topic Two</li><br><li>Topic Three</li><br><li>Topic Four</li><br><li>Topic Five</li></ul></fieldset>").appendTo('#description').addClass('s3').show('clip',1000);
+			}
+			if(id=='sec2')
+			{
+				$('#sec1').css({'background':'darkgray'}).removeClass('s1').addClass('s2');
+				$('#sec2').css({'background':'gainsboro'}).removeClass('s2').addClass('s1');
+				$('#sec3').css({'background':'darkgray'}).removeClass('s1').addClass('s2');
+				$('video').attr({src:'video1.mp4',height:'290px',width:'400px'});
+				$('#video').find('b').text('jQuery UI');
+				$('#description').empty();
+				$("<fieldset><legend>Description</legend><ul><li>Chapter 1</li><br><li>Chapter 2</li><br><li>Chapter 3</li><br><li>Chapter 4</li><br><li>Chapter 5</li></ul></fieldset>").appendTo('#description').addClass('s3').show('slide',1000);
+			}
+			if(id=='sec3')
+			{
+				$('#sec1').css({'background':'darkgray'}).removeClass('s1').addClass('s2');
+				$('#sec2').css({'background':'darkgray'}).removeClass('s1').addClass('s2');
+				$('#sec3').css({'background':'darkgray'}).removeClass('s2').addClass('s1');
+				$('video').attr({src:'video1.mp4',height:'290px',width:'400px'});
+				$('#video').find('b').text('Creating Web Sites');
+				$('#description').empty();
+				$("<fieldset><legend>Description</legend><ul><li>Unit 1</li><br><li>Unit 2</li><br><li>Unit 3</li><br><li>Unit 4</li><br><li>Unit 5</li></ul></fieldset>").appendTo('#description').addClass('s3').show('clip',1000);
+			}
+		})
+	})
+</script>
+
+<body>
+
+<div class='c1'>
+	<section id='sec1' title='jQuery Core'>Chapter1</section>
+	<section id='sec2' title='jQuery UI'>Chapter2</section>
+	<section id='sec3' title='Web Site Creation'>Chapter3</section>
+</div>
+<div class='container' id='container'>
+	<section id='video'><br>
+		<b style='color:green;font-size:20px;'>Hello.....!!!!!</b><br><br>
+		<video autoplay='autoplay' controls='controls' height='300' width='300'>
+			<source src='video1.mp4' type='video/mp4'>
+		</video>
+	</section>
+	<section id='description'>
+			<fieldset>
+				<legend>Description</legend>
+				<ul>
+					<li>Topic One</li><br>
+					<li>Topic Two</li><br>
+					<li>Topic Three</li><br>
+					<li>Topic Four</li><br>
+					<li>Topic Five</li>
+				</ul>
+			</fieldset>
+	</section>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<html>
+<head>
+<script src="jquery-2.1.4.min.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+	$(document).ready(function()
+	{
+		$("#a1").mouseenter(function()
+		{
+			$(this).addClass('c1');
+			$('.d1').empty();
+			$("<fieldset><legend>HTML</legend><ul><li>HTML stands for Hypertext Markup Language.</li><br><li>Hypertext is an ordinary text dressed up with extra features.</li><br>			<li>Markup is a process of taking ordinary text and adding extra symbols.</li><br><li>Language is actually a keypoint to remember about HTML</li><br></ul></fieldset>").appendTo('.d1').addClass('c2').show('fold',1000);
+		})
+
+		$("#a2").mouseenter(function()
+		{
+			$(this).addClass('c1');
+			$('.d1').empty();
+			$("<fieldset><legend>CSS</legend><ul><li>CSS stands for Cascading Style Sheets.</li><br><li>Styles defines how to display HTML elements.</li><br><li>External style sheets can save a lot of work.</li><br><li>External style sheets are stored in CSS files.</li><br></ul></fieldset>").appendTo('.d1').addClass('c2').show('bounce',1000);
+		})
+
+		$("#a3").mouseenter(function()
+		{
+			$(this).addClass('c1');
+			$('.d1').empty();
+			$("<fieldset><legend>Javascript</legend><ul><li>Javascript was designed to add interactivity to html pages.</li><br><li>Javascript is a scripting language.</li><br><li>A scripting language is a lightweight programming language.</li><br><li>Javascript is usually embedded directly into HTML pages.</li><br></ul></fieldset>").appendTo('.d1').addClass('c2').show('drop',1000);
+		})
+
+		$("#a4").mouseenter(function()
+		{
+			$(this).addClass('c1');
+			$('.d1').empty();
+			$("<fieldset><legend>Jquery</legend><ul><li>Jquery is a lightweight, write less,do more javascript library.</li><br><li>The purpose is to make it much easier to use javascript on your website.</li><br><li>It also simplifies a lot more complicated things.</li><br><li>Jquery has plugins for almost any task out there.</li><br></ul></fieldset>").appendTo('.d1').addClass('c2').show('clip',1000);
+		})
+
+		$("#a1").mouseleave(function()
+		{
+			$(this).removeClass("c1");
+		})
+		$("#a2").mouseleave(function()
+		{
+			$(this).removeClass("c1");
+		})
+		$("#a3").mouseleave(function()
+		{
+			$(this).removeClass("c1");
+		})
+		$("#a4").mouseleave(function()
+		{
+			$(this).removeClass("c1");
+		})
+	})
+</script>
+
+<style>
+	marquee
+	{
+		font-size:40px;
+		color:white;
+		font-family:"forte";
+	}
+	.id1
+	{
+		
+		float:left;
+		font-size:30px;
+		font-weight:bold;
+		margin-left:50px;
+		margin-top:100px;
+		color:white;
+		text-shadow:10px 10px 10px black;
+	}
+	.d1
+	{
+		float:right;
+		margin-top:100px;
+		margin-right:100px;
+		font-size:20px;
+		background:lightgreen;
+		color:black;
+		box-shadow:10px 10px 5px white;
+		border-radius:0px 50px 0px 50px;
+		height:350px;
+		width:500px;
+		padding:20px;
+	}
+	body
+	{
+		background-image:url('bgimg.jpg');
+		background-size:100% 100%;
+	}
+	.c1
+	{
+		color:lightgreen;
+	}
+	.c2
+	{
+		display:none;
+	}
+</style>
+</head>
+
+<body>
+	<br><br>
+	<marquee behavior='alternate'><i>Learning Web Programming</i> </marquee>
+	<hr>
+
+	<ul class="id1">
+		<li id="a1">HTML</li><br>
+		<li id="a2">CSS</li><br>
+		<li id="a3">JavaScript</li><br>
+		<li id="a4">Jquery</li><br>
+	</ul>
+
+	<div class="d1">
+		<fieldset>
+			<legend style="color:yellow">HTML</legend>
+				<ul>
+					<li>HTML stands for Hypertext Markup Language.</li><br>
+					<li>Hypertext is an ordinary text dressed up with extra features.</li><br>
+					<li>Markup is a process of taking ordinary text and adding extra symbols.</li><br>
+					<li>Language is actually a keypoint to remember about HTML</li><br>
+				</ul>
+		</fieldset>
+	</div>
+
+</body>
+</html>

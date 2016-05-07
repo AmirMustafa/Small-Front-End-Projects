@@ -1,0 +1,323 @@
+<html>
+
+	<link rel="icon" type="images/png" href="favicon.png">
+
+<head>
+
+	<script src="jquery.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$('p').eq(0).show();
+			
+			$("#b").mouseenter(function()
+			{
+				$("#b").css({'background':'lightgrey' ,'color':'blue'}).addClass("selected");
+				$("#div2").find(".class1").removeClass('class1');
+				$(this).addClass('class1');
+				$('#img1').attr('src','Great Wall of China.jpg');
+				$("#div3").find('p:visible').hide();
+					$("#p1").show();	
+				
+				
+			})
+
+			$("#b").mouseleave(function()
+			{
+				$("#b").css({'background':'black','color':'yellow'}).removeClass(selected);
+				
+			})
+
+
+			$("#c").mouseenter(function()
+			{
+				$("#c").css({'background':'lightgrey' ,'color':'blue'}).addClass("selected");
+				$("#div2").find(".class1").removeClass('class1');
+				$(this).addClass('class1');
+				$('#img1').attr('src','Machu Picchu.jpg');
+				$("#div3").find('p:visible').hide();
+					$("#p2").show();
+			})
+
+			$("#c").mouseleave(function()
+			{
+				$("#c").css({'background':'black','color':'yellow'}).removeClass(selected);
+			})
+
+			$("#d").mouseenter(function()
+			{
+				$("#d").css({'background':'lightgrey' ,'color':'blue'}).addClass("selected");
+				$("#container").find(".class1").removeClass('class1');
+				$(this).addClass('class1');
+				$('#img1').attr('src','Petra Jordan.jpg');
+				$("#div3").find('p:visible').hide();
+					$("#p3").show();
+			})
+
+			$("#d").mouseleave(function()
+			{
+				$("#d").css({'background':'black','color':'yellow'}).removeClass(selected);
+			})
+
+			$("#e").mouseenter(function()
+			{
+				$("#e").css({'background':'lightgrey' ,'color':'blue'}).addClass("selected");
+				$("#div2").find(".class1").removeClass('class1');
+				$(this).addClass('class1');
+				$('#img1').attr('src','Pyramid at Chichén Itzá.png');
+				$("#div3").find('p:visible').hide();
+					$("#p4").show();
+			})
+
+			$("#e").mouseleave(function()
+			{
+				$("#e").css({'background':'black','color':'yellow'}).removeClass(selected);
+			})
+
+			$("#f").mouseenter(function()
+			{
+				$("#f").css({'background':'lightgrey' ,'color':'blue'}).addClass("selected");
+				$("#div2").find(".class1").removeClass('class1');
+				$(this).addClass('class1');
+				$('#img1').attr('src','Roman Colosseum.jpg');
+				$("#div3").find('p:visible').hide();
+					$("#p5").show();
+			})
+
+			$("#f").mouseleave(function()
+			{
+				$("#f").css({'background':'black','color':'yellow'}).removeClass(selected);
+			})
+
+			$("#g").mouseenter(function()
+			{
+				$("#g").css({'background':'lightgrey' ,'color':'blue'}).addClass("selected");
+				$("#div2").find(".class1").removeClass('class1');
+				$(this).addClass('class1');
+				$('#img1').attr('src','Taj Mahal.jpg');
+				$("#div3").find('p:visible').hide();
+					$("#p6").show();
+			})
+
+			$("#g").mouseleave(function()
+			{
+				$("#g").css({'background':'black','color':'yellow'}).removeClass(selected);
+			})
+
+			$("#h").mouseenter(function()
+			{
+				$("#h").css({'background':'lightgrey' ,'color':'blue'}).addClass("selected");
+				$("#div2").find(".class1").removeClass('class1');
+				$(this).addClass('class1');
+				$('#img1').attr('src','Rio de Janeiro.jpg');
+				$("#div3").find('p:visible').hide();
+					$("#p7").show();
+			})
+
+			$("#h").mouseleave(function()
+			{
+				$("#h").css({'background':'black','color':'yellow'}).removeClass(selected);
+			})
+
+			
+		});
+	</script>
+	<style>
+
+	.selected
+	{
+		background-color: black;
+		color: blue;
+	}
+
+	body
+	{background: black;
+	margin-left: 250px;
+	}
+
+	#container
+	{
+		background: black;
+		width: 850px;
+		height: 650px;
+		padding-left: 30px;
+		padding-top:10px;
+		
+		
+	}
+
+	.class1
+	{
+		background: black;
+		
+	}
+
+	
+	#div1
+	{
+		width: 804px;
+		height:60px;
+		background: black;
+		color :red;
+		font-weight: bold;
+		font-size: 25px;
+		padding-top: 10px;
+		border: 4px solid silver;
+
+		
+	}
+
+	#div2
+	{
+		width: 804px;
+		height:448px;
+		background: silver;
+		border: 4px solid silver;
+		
+	}
+
+	#div3
+	{
+		width: 804px;
+		height:120px;
+		background: lightgray;
+		border: 4px solid silver;
+		color:purple;
+		font-size: 18px;
+		text-align: justify;
+		
+		
+	}
+
+	#a
+	{
+		background-color: lavender;
+		width: 550px;
+		height: 445px;
+		float: left;
+		position: relative;
+		
+		
+	}
+	
+	
+	
+
+	#b, #c, #d, #e, #f, #g, #h
+	{
+		font-size: 20px;
+		color: yellow;
+		text-align: center;
+		background: black;
+		
+		
+	}
+	
+	
+
+	#b { background: black; width:250px; height: 62px; float: right}
+
+	#c { background: black; width:250px; height: 62px; float: right ; border: 1px solid silver;}
+
+	#d { background: black; width:250px; height: 62px; float: right; border: 1px solid silver;}
+
+	#e { background: black; width:250px; height: 62px; float: right; border: 1px solid silver;}
+
+	#f { background: black; width:250px; height: 62px; float: right; border: 1px solid silver;}
+
+	#g { background: black; width:250px; height: 62px; float: right; border: 1px solid silver;}
+
+	#h { background: black; width:250px; height: 62px;float: right; border: 1px solid silver;}
+
+	#img1, #img2, #img3, #img4, #img5, #img6, #img7
+	{
+		position: absolute;
+		left: 0;
+	} 
+
+	
+
+	#p1, #p2, #p3, #p4, #p5, #p6, #p7
+	{
+		display: none;
+	}
+
+	
+	#img1 {z-index: 7; }
+	#img2 {z-index: 6; }
+	#img3 {z-index: 5; }
+	#img4 {z-index: 4; }
+	#img5 {z-index: 3; }
+	#img6 {z-index: 2; }
+	#img7 {z-index: 1; }
+
+
+
+	
+	</style>
+</head>
+
+<body>
+	<div id="container">
+	<div id="div1"><marquee scrollamount="25">New Wonders of World !</marquee></div>
+	<div id="div2">
+		<div  class="btn" id="a"> 
+			 <img id="img1" src="Great Wall of China.jpg">
+			 
+
+			 
+			  
+		</div>
+		<div  class="class1" id="b">Great Wall of China</div>
+		<div  id="c">Machu Picchu</div>
+		<div  id="d">Petra Jordan</div>
+		<div  id="e">Pyramid at Chichén Itzá</div>
+		<div  id="f">Roman Colosseum</div>
+		<div  id="g">Taj Mahal</div>
+		<div  id="h">Rio de Janeiro</div>
+		
+	</div>
+	<div id="div3">
+
+			<p id='p1'>The Great Wall of China was built to link existing fortifications 
+                        into a united defense system and better keep invading Mongol tribes out of China. It is the largest man-made monument ever to have been built and 
+                        it is disputed that it is the only one visible from space. Many thousands of people must have given their lives to build this colossal 
+			construction.</p>
+
+			<p id='p2'>In the 15th century, the Incan Emperor Pachacútec built a city in the clouds on the mountain known as Machu Picchu (“old mountain”).
+			 This extraordinary settlement lies halfway up the Andes Plateau, deep in the Amazon jungle and above the Urubamba River. It was probably 
+			abandoned by the Incas because of a smallpox outbreak and, after the Spanish defeated the Incan Empire, the city remained ‘lost’ for 
+			over three centuries. It was rediscovered by Hiram Bingham in 1911.</p>
+
+			<p id='p3'>On the edge of the Arabian Desert, Petra was the glittering capital of the Nabataean empire of King Aretas IV (9 B.C. to 40 A.D.).
+			 Masters of water technology, the Nabataeans provided their city with great tunnel constructions and water chambers. A theater, modelled on 
+			Greek-Roman prototypes, had space for an audience of 4,000. Today, the Palace Tombs of Petra, with the 42-meter-high Hellenistic temple facade 
+			on the El-Deir Monastery, are impressive examples of Middle Eastern culture.</p>
+
+			<p id='p4'>Chichén Itzá, the most famous Mayan temple city, served as the political and economic center of the Mayan civilization. 
+			Its various structures – the pyramid of Kukulkan, the Temple of Chac Mool, the Hall of the Thousand Pillars, and the Playing Field of 
+			the Prisoners – can still be seen today and are demonstrative of an extraordinary commitment to architectural space and composition. 
+			The pyramid itself was the last, and arguably the greatest, of all Mayan temples.</p>
+
+</p>
+
+			<p id='p5'>This great amphitheater in the centre of Rome was built to give favors to successful legionnaires and to celebrate the glory of the Roman 
+			Empire. Its design concept still stands to this very day, and virtually every modern sports stadium some 2,000 years later still bears the 
+			irresistible imprint of the Colosseum’s original design. Today, through films and history books, we are even more aware of the cruel fights 
+			and games that took place in this arena, all for the joy of the spectators.</p>
+
+			<p id='p6'>This immense mausoleum was built on the orders of Shah Jahan, the fifth Muslim Mogul emperor, to honor the memory of his beloved 
+			late wife. Built out of white marble and standing in formally laid-out walled gardens, the Taj Mahal is regarded as the most perfect jewel of 
+			Muslim art in India. The emperor was consequently jailed and, it is said, could then only see the Taj Mahal out of his small cell window.</p>
+</p>
+
+			<p id='p7'>This statue of Jesus stands some 38 meters tall, atop the Corcovado mountain overlooking Rio de Janeiro. Designed by Brazilian Heitor da 
+			Silva Costa and created by French sculptor Paul Landowski, it is one of the world’s best-known monuments. The statue took five years to 
+			construct and was inaugurated on October 12, 1931. It has become a symbol of the city and of the warmth of the Brazilian people, who receive 
+			visitors with open arms.</p>
+</p>
+
+		</div>
+	</div>
+</body>
+</html>

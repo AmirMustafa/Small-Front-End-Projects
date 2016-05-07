@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script language="javascript">
+	var a = prompt("enter  ur name");
+	var b = parseInt(prompt("enter sub 1 marks"));
+	var c = parseInt(prompt("enter sub 2 marks"));
+	var d = parseInt(prompt("enter sub 3 marks"));
+	document.write("<center>");
+	document.write("<table border=1px>");
+	document.write("<tr style='height:50px'>");
+	
+	function add()
+	{
+	var tot= b+c+d;
+	return tot;
+	}
+	
+	function per()
+	{
+	var tot= b+c+d;
+	var p= tot/300*100;
+	return p;
+	}
+	
+	function gra()
+	{
+	var tot= b+c+d;
+	var p= tot/300*100;
+	
+	if(p>=90){
+		return "A+";
+		}else if(p>=80){
+		return "A";
+		}else if(p>=70){
+		return "B";
+		}else if(p>=60){
+		return "C";
+		}else if(p>=50){
+		return "D";
+		}else if(p<50){
+		return "D-";
+		}
+	}
+
+	
+	document.write("<td style='text-align:center; width: 200px; background-color:lightblue'>" + "Name" +  "</td>");
+	document.write("<td style='text-align:center; width: 200px; background-color:lightblue'>" + a +  "</td>");
+	document.write("</tr>");
+	
+	document.write("<tr style='height:50px'>");
+	document.write("<td style='text-align:center; width: 200px; background-color:lightgray'>" + "Sub1 marks" +  "</td>");
+	document.write("<td style='text-align:center; width: 200px; background-color:lightgray'>" + b +  "</td>");
+	document.write("</tr>");
+	
+	document.write("<tr style='height:50px'>");
+	document.write("<td style='text-align:center; width: 200px; background-color:lightgray'>" + "Sub2 marks" +  "</td>");
+	document.write("<td style='text-align:center; width: 200px; background-color:lightgray'>" + c +  "</td>");
+	document.write("</tr>");
+	
+	document.write("<tr style='height:50px'>");
+	document.write("<td style='text-align:center; width: 200px; background-color:lightgray'>" + "Sub3 marks" +  "</td>");
+	document.write("<td style='text-align:center; width: 200px; background-color:lightgray'>" + d +  "</td>");
+	document.write("</tr>");
+	
+	document.write("<tr style='height:50px'>");
+	document.write("<td style='text-align:center; width: 200px; background-color:lightblue'>" + "Total" +  "</td>");
+	document.write("<td style='text-align:center; width: 200px; background-color:lightblue' onclick='this.innerHTML=add()'>");
+	document.write("</td>");
+	document.write("</tr>");
+
+	document.write("<tr style='height:50px'>");
+	document.write("<td style='text-align:center; width: 200px; background-color:lightblue'>" + "Percentage" +  "</td>");
+	document.write("<td style='text-align:center; width: 200px; background-color:lightblue' onclick='this.innerHTML=per()'>");
+	document.write("</td>");
+	document.write("</tr>");
+
+	document.write("<tr style='height:50px'>");
+	document.write("<td style='text-align:center; width: 200px; background-color:lightblue'>" + "Grade" +  "</td>");
+	document.write("<td style='text-align:center; width: 200px; background-color:lightblue' onclick='this.innerHTML=gra()'>");
+	document.write("</td>");
+	document.write("</tr>");
+	
+	document.write("</table>");
+	document.write("</center>");
+  </script>
+ </body>
+</html>

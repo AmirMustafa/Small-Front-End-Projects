@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+
+ <script language="javascript">
+	count=0;
+	function playv()
+	{
+		count++;
+		if(count%2==0)
+		{
+			video.play();
+			img1.src="pause.jpg";
+		}
+		else
+		{
+			video.pause();
+			img1.src="play.jpg";
+		}
+	}
+
+	function mutev()
+	{
+		count++
+		if(count%2==0)
+		{
+			video.muted=false;
+			img2.src="unmute.jpg";
+		}
+		else
+		{
+			video.muted=true;
+			img2.src="mute.jpg";
+		}
+	}
+ </script>
+
+ </head>
+ <body>
+ </br>
+	<center>
+	<img id="img1" src="play.jpg" onclick="playv()" height="50px" width="50px">
+		
+	 <img id="img2" src="unmute.jpg" onclick="mutev()" height="50px" width="50px">
+
+	</br> </br>
+		<video id="video" width="500" height="500" controls="controls" autoplay="autoplay" loop="loop">
+			<source src="video1.mp4" type="video/mp4">
+		</video>
+	</center>
+
+ </body>
+</html>
